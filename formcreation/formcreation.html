@@ -1,0 +1,41 @@
+<!DOCTYPE append>
+<append lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="formcreation.css">
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+       
+         $(document).ready(function(){
+            $("#sub").click(function(){
+                var fname= $("#fn").val();
+                var lname= $("#ln").val();
+                var email= $("#em").val();
+                var pnumber= $("#co").val();
+                $("table").append("<tr> <td>" + fname + "</td>" + "<td>" + lname + "</td>" + "<td>" + email + "</td>" + "<td>" + pnumber + "</td> </tr>");
+            })
+        })
+    </script>
+</head>
+<body>
+        <table style="width:100%">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Email</th>
+                  <th>Contact #</th>
+                </tr>
+        </table>
+        <form id="form1">
+            <h3>First name: </h3>
+            <input type="text" value = "firstname" name="firstname" id="fn"><br>
+            <h3>Last name: </h3>
+            <input type="text" value = "lastname" name="lastname" id="ln"><br>
+            <h3>Email: </h3>
+            <input type="text" value = "email" name="email" id="em"><br>
+            <h3>Contact Number: </h3>
+            <input type="text" value= "contact" name="contact" id="co"><br>
+        </form>
+        <button id="sub" value="submit">Submit</button>
+</body>
+</append>

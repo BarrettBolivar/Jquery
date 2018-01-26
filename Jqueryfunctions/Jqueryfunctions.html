@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+	    $(document).ready(function(){
+		    $('#click').click(function(){
+			    alert("wooo")
+		})
+        $('#hide').click(function(){
+			$("#hide").hide()
+		})
+        $('#show').click(function(){
+			$("#hide").show()
+		})
+        $('#toggle').click(function(){
+			$("#hide").toggle()
+		})
+        $('#slidedown').click(function(){
+			$("#hidden").slideDown()
+		})
+        $('#slideup').click(function(){
+			$("#slideUp").slideUp()
+		})
+        $('#slidetoggle').click(function(){
+			$("#slideToggle").slideToggle()
+		})
+        $('#fadein').click(function(){
+			$("#fadeIn").fadeIn()
+		})
+        $('#fadeout').click(function(){
+			$("#fadeOut").fadeOut()
+		})
+        $('#addclass').click(function(){
+			$("#addClass").addClass("blue")
+		})
+        $('#before').click(function(){
+			$("#bbefore").before("<h1>woot</h1>")
+		})
+        $('#after').click(function(){
+			$("#aafter").after("<h1>woot</h1>")
+		})
+        $('#append').click(function(){
+			$("#aappend").append("Boo ya")
+		})
+        $('#html').click(function(){
+			$("#hhtml").html("<h1>Woot</h1>")
+		})
+        $('.attr').click(function(){
+			var classVal = $("#attr").attr("class")
+			$('#attr').append(classVal)
+		})
+		$('.attr2').click(function(){
+			$("#attr").attr("class", "blueb")
+		})
+        $('.val').click(function(){
+			console.log($("#val").val())
+		})
+		$('.val2').click(function(){
+			$('#val').val("tip")
+		})
+        $('#text').click(function(){
+			$("#ttext").text("Yo dawg")
+		})
+        var el = $("#ddata")
+		$.data(el, "name", "Data from Startrek")
+		$('#data').click(function(){
+			var value = $.data(el,"name")
+			$("#ddata").after(value)
+		})
+    })
+    </script>
+    <style type="text/css">
+        .blue {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div><button id="click"> Click function </button>
+    <p>Bind an event handler to the "click" JavaScript event, or trigger that event on an element.</p><br>
+    </div>
+    <div>
+        <button id="hide"> Hide function </button>
+        <p>Hides things</p><br>
+    </div>
+    <div>
+        <button id="show"> Show function </button>
+        <p>Shows things// click to show previous button.</p><br>
+    </div>
+    <div>
+        <button id="toggle"> Toggle function </button>
+        <p>Turns on and off</p><br>
+    </div>
+    <div>
+        <button id="slidedown"> Slide down function </button>
+        <p id="hidden" hidden>This was hidden.</p>
+        <p>Shows something previously hidden.</p><br>
+    </div>
+    <div>
+        <button id="slideup"> Slide up function </button>
+        <p id="slideUp">I was hiding</p>
+        <p>Slides things up to hide.</p><br>
+    </div>
+    <div>
+        <button id="slidetoggle"> Slide toggle function </button>
+        <p id="slideToggle">Toggle toggle Squirtle squirtle</p>
+        <p>Does both slide up and down.</p><br>
+    </div>
+    <div>
+        <button id="fadein"> Fade in function </button>
+        <p id="fadeIn" hidden>Fa fa faded</p>
+        <p>Brings information in thru animation</p><br>
+    </div>
+    <div>
+        <button id="fadeout"> Fade out function </button>
+        <p id="fadeOut">I'm the one that faded you.</p>
+        <p>Fades out an item</p><br>
+    </div>
+    <div>
+        <button id="addclass"> Add class function </button>
+        <p id="addClass">Make me blue!</p><br>
+    </div>
+    <div>
+        <button id="before"> Before function </button>
+        <p id="bbefore">An h1 tag will be added before me</p>
+        <p>Adds something before</p><br>
+    </div>
+    <div>
+        <button id="after"> After function </button>
+        <p id="aafter">An h1 tag will be added after me</p><br>
+    </div>
+    <div>
+        <button id="append"> Append function </button>
+        <p id="aappend">Appends items.</p><br>
+    </div>
+    <div>
+        <button id="html"> HTML function </button>
+        <p id="hhtml">Adds/changes another element with the item</p><br>
+    </div>
+    <div>
+        <button class="attr">retreive class</button>
+        <button class="attr2">change class attribute to blueb</button>
+        <p>Retreives//set an attribute of an element</p>
+        <p class="green" id="attr">I am a p tag with the class of green. Class=</p>
+    </div>
+    <div>
+        <button class="val">retreive input. in console</button>
+        <button class="val2">change the value "tip"</button>
+        <p>Retreives//set a value of an input</p>
+        <input type="text" name="name" id="val">
+    </div>
+    <div>
+        <button id="text"> Text function </button>
+        <p id="ttext">Changes this text</p><br>
+    </div>
+    <div>
+        <button id="data"> Data function </button>
+        <p id="ddata">There is information inside.</p><br>
+    </div>
+
+</body>
+</html>

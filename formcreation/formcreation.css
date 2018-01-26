@@ -1,0 +1,10 @@
+table {
+    border: 1px solid black;
+    width: 30%;
+}
+h3 {
+    display: inline-block;
+}
+input {
+    display: inline-block;
+}
