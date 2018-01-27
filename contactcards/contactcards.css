@@ -1,0 +1,35 @@
+#left {
+    width: 500px;
+    display: inline-block;
+    background-color: rgb(173, 173, 173);
+    padding: 20px;
+}
+#right {
+    display: inline-block;
+    padding: 20px;
+}
+
+h3 {
+    display: inline-block;
+}
+input {
+    display: inline-block;
+}
+h2 {
+    display: block;
+}
+button {
+    display: block;
+}
+#largebox {
+    width: 200px;
+    height: 200px;
+}
+div {
+    border: 1px solid black;
+    display: inline-block;
+    width: 700px;
+    vertical-align: top;
+    text-align: center;
+    background-color: rgb(124, 124, 124);
+}
